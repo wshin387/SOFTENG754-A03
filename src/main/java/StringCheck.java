@@ -7,7 +7,18 @@ public class StringCheck {
      * - Note: do not change method signature
      */
     public boolean isPalindrome (final String str) {
-        throw new RuntimeException("Write your code here");
+        if (str == null) {
+            return false;
+        }
+        int length = str.length();
+
+        for (int i=0; i<length/2; i++) {
+            if (str.charAt(i) != str.charAt(length - i - 1)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**
@@ -17,9 +28,13 @@ public class StringCheck {
      * - Note: do not change method signature
      */
     public boolean isEmpty(final String str) {
-        throw new RuntimeException("Write your code here");
+        if (str == null) {
+            return false;
+        }
+
+        return str.equals("");
     }
-    
+
     /**
      * TBD:
      * - Check if the string is null
@@ -27,9 +42,9 @@ public class StringCheck {
      * - Note: do not change method signature
      */
     public boolean isNull(final String str) {
-        throw new RuntimeException("Write your code here");
+        return str == null;
     }
-    
+
     /**
      * TBD:
      * - Check if the string contains only whitespace
@@ -37,6 +52,9 @@ public class StringCheck {
      * - Note: do not change method signature
      */
     public boolean isOnlyWhitespace(final String str) {
-        throw new RuntimeException("Write your code here");
+        if (str == null) {
+            return true;
+        }
+        return str.trim().equals("");
     }
 }
