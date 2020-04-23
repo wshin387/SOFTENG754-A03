@@ -17,7 +17,7 @@ public class CalculatorTest {
         assertEquals(null, calculator.sumAllNumbers());
         assertEquals(10, (Object) calculator.sumAllNumbers(1, 2, 3, 4));
         assertEquals(0, (Object) calculator.sumAllNumbers(0));
-        assertEquals(5, (Object) calculator.sumAllNumbers(5));
+        assertEquals(4, (Object) calculator.sumAllNumbers(5));
         assertEquals(0, (Object) calculator.sumAllNumbers(-1,1,-2,2));
         assertEquals(5, (Object) calculator.sumAllNumbers(-5, 10));
 
