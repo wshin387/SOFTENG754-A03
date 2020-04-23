@@ -38,7 +38,7 @@ public class StringCheckTest {
         assertTrue(stringCheck.isOnlyWhitespace(null));
         assertTrue(stringCheck.isOnlyWhitespace(""));
         assertTrue(stringCheck.isOnlyWhitespace(" "));
-        assertFalse(stringCheck.isOnlyWhitespace("   "));
+        assertTrue(stringCheck.isOnlyWhitespace("   "));
         assertFalse(stringCheck.isOnlyWhitespace(" a"));
         assertFalse(stringCheck.isOnlyWhitespace("a "));
         assertFalse(stringCheck.isOnlyWhitespace(" ab "));
